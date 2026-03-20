@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  text-align: center;
+}
+
+#root {
+  width: 100%;
+}
+
+.game-box {
+  width: 700px;
+  margin: 70px auto;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: normal;
+  margin-bottom: 35px;
+}
+
+.score-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.score-box {
+  width: 150px;
+  text-align: left;
+}
+
+.score-box.right {
+  text-align: right;
+}
+
+.score-number {
+  font-size: 54px;
+  line-height: 1;
+}
+
+.score-label {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+.message {
+  width: 100%;
+  padding: 14px;
+  box-sizing: border-box;
+  margin: 25px 0 45px 0;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.message.correct {
+  background: #d9ead3;
+  color: #2d4a2d;
+}
+
+.message.incorrect {
+  background: #f4cccc;
+  color: #7a1f1f;
+}
+
+.message.normal {
+  background: #cfe2f3;
+  color: #1f3b57;
+}
+
+.scrambled-word {
+  font-size: 58px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+form {
+  margin: 0;
+}
+
+input {
+  width: 100%;
+  padding: 16px;
+  font-size: 28px;
+  box-sizing: border-box;
+  border: 2px solid #9fc5e8;
+  border-radius: 4px;
+}
+
+.hidden-button {
+  display: none;
+}
+
+.pass-button,
+.play-again-button {
+  margin-top: 16px;
+  padding: 10px 18px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pass-button {
+  background: #d9534f;
+}
+
+.pass-button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.play-again-button {
+  background: #4285f4;
+}
+
+.game-over-box {
+  margin-top: 40px;
+}
+
+.game-over-box h2 {
+  font-size: 42px;
+  font-weight: normal;
+}
